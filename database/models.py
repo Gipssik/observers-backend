@@ -44,7 +44,7 @@ class User(Base):
     email = Column(String, nullable=False, unique=True, index=True)
     password = Column(String, nullable=False)
     date_created = Column(DateTime, nullable=False, default=datetime.datetime.now)
-    profile_image = Column(String, nullable=False, default='default.jpg')
+    profile_image = Column(String, nullable=False, default='https://i.imgur.com/2VVImvn.jpg')
     role_id = Column(Integer, ForeignKey('roles.id'))
 
     notifications = relationship('Notification', backref='user', cascade='all,delete')
