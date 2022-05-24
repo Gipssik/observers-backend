@@ -9,7 +9,7 @@ from security import router as security_router
 from security.hashing import get_password_hash
 from routers import router
 
-app = FastAPI()
+app = FastAPI(docs_url=None, redoc_url=None)
 
 origins = [
     "*"
