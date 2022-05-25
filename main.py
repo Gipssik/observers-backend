@@ -12,7 +12,7 @@ from routers import router
 app = FastAPI(docs_url=None, redoc_url=None)
 
 origins = [
-    "*"
+    "http://observers.gipss.tech/",
 ]
 
 app.add_middleware(
