@@ -12,7 +12,10 @@ from routers import router
 app = FastAPI(docs_url=None, redoc_url=None)
 
 origins = [
+    "https://observers.gipss.tech",
     "http://observers.gipss.tech",
+    "https://observers-frontend.herokuapp.com",
+    "http://observers-frontend.herokuapp.com",
 ]
 
 app.add_middleware(
